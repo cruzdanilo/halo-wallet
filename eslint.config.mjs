@@ -14,6 +14,7 @@ const compat = new FlatCompat({ baseDirectory: __dirname });
 export default config(
   ...compat.extends("next/core-web-vitals"),
   ...compat.extends("plugin:@eslint-community/eslint-plugin-eslint-comments/recommended"),
+  ...compat.extends("plugin:@tanstack/eslint-plugin-query/recommended"),
   ...compat.extends("plugin:import/typescript"),
   js.configs.recommended,
   unicorn["flat/recommended"],
